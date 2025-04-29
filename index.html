@@ -1,0 +1,1296 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+            <title>Top Painting Contractors | PrimeCoat Painting | Call Us Now (204) 506-9078</title>
+        <meta name="title" content="Top Painting Contractors | PrimeCoat Painting | Call Us Now (204) 506-9078" />
+        <meta name="robots" content="NOODP, NOYDIR, index, follow" />
+        <link rel="canonical" href="https://exquisiteblooms.shop/" />
+        <meta name="description" content="PrimeCoat Painting provides high-quality residential and commercial painting services. Trust our professional painters for reliable, affordable, and beautiful results. Call today for a free quote!" />
+        <meta property="og:title" content="Top Painting Contractors | PrimeCoat Painting | Call Us Now (204) 506-9078" />
+        <meta property="og:description" content="PrimeCoat Painting provides high-quality residential and commercial painting services. Trust our professional painters for reliable, affordable, and beautiful results. Call today for a free quote!" />
+        <meta property="og:type" content="article" />
+        <meta property="og:site_name" content="PrimeCoat Painting" />
+        
+        <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap" rel="stylesheet">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        
+        
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link href="static/lib/animate/animate.min.css" rel="stylesheet">
+        <link href="static/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="static/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="static/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link rel="stylesheet" href="static/aloomaspecial/alooma.css">
+        <link href="static/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="static/aloomaspecial/alooma.css"><link rel="stylesheet" href="static/aloomaspecial/alooma2.css"></head>
+
+    <body>
+        <!-- Navbar & Hero Start -->
+        <div class="container-fluid sticky-top px-0">
+            <div class="position-absolute bg-dark" style="left: 0; top: 0; width: 100%; height: 100%;">
+            </div>
+            <div class="container px-0">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-white py-3 px-4">
+                    <a href="index.html" class="navbar-brand p-0">
+                        <h1 class="text-primary m-0"><img src="static/img/logo.png" alt="Logo" style="height: 40px; margin-bottom: 5px;">PrimeCoat Painting</h1>
+                        
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="fa fa-bars"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <div class="navbar-nav ms-auto py-0">
+                            <a href="/" class="nav-item nav-link active">Home</a>
+                            <a href="#" class="nav-item nav-link">About</a>
+                            <a href="#" class="nav-item nav-link">Services</a>
+                            <a href="#" class="nav-item nav-link">Reviews</a>
+                            <div class="d-flex align-items-center flex-nowrap pt-xl-0" style="margin-left: 15px; font-family: calibri;">
+                                <a href="tel:2045069078" class="btn-hover-bg btn btn-primary text-white py-2 px-6 me-3" style="background-color: red; border: solid white;">Call us: (204) 506-9078</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Navbar & Hero End -->
+    
+        <!-- Modal Search End -->
+
+        <!-- Carousel Start -->
+        <div class="header-carousel owl-carousel">
+            <div class="header-carousel-item">
+                <div class="header-carousel-item-img-1">
+                    <img src="static/img/carousel-1.jpg" class="img-fluid w-100" alt="Image">
+                </div>
+                <div class="carousel-caption">
+                    <div class="carousel-caption-inner text-start p-3">
+                        <h1 class="display-1 text-capitalize text-white mb-4 fadeInUp animate__animated" data-animation="fadeInUp" data-delay="1.3s" style="animation-delay: 1.3s;">The Best Painting Services in USA</h1>
+                        <div class="d-flex align-items-center flex-nowrap pt-xl-0 " style="margin-left: 15px; font-family: calibri;">
+                            <a href="tel:2045069078" class="btn-hover-bg btn btn-primary text-white py-2 px-4 me-3 fadeInUp animate__animated" data-animation="fadeInUp" data-delay="1.5s" style="animation-delay: 1.7s;" style="background-color: red; border: solid white;">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Carousel End -->
+
+        <div id="output"></div>
+    <script>
+        
+        function getContents(selectedContents, splitInfo) {
+            let [header, paragraph] = selectedContents.split(splitInfo);
+            header = header.replace(/<br>/g, '');
+            paragraph = paragraph.replace(/<br><br>/g, '<br>');
+
+            let secondPart = '';
+            if (paragraph.includes('<list>')) {
+                let [partParagraph, listParagraph] = paragraph.split('<list>');
+                let listItems = listParagraph.replace(/<br>/g, '').replace(/\n/g, '').split('^^');
+                let appendAllList = listItems.map(item => `<li>${item}</li>`).join('');
+                secondPart = `<ul>${appendAllList}</ul>`;
+                return [header, partParagraph, secondPart];
+            }
+            return [header, paragraph, secondPart];
+        }
+
+        function cleanText(htmlContent) {
+            let result = htmlContent;
+            let regex = /{([^{}()]+)}/g;
+            result = result.replace(regex, (match, p1) => {
+                if (p1.includes('|')) {
+                    let options = p1.split('|');
+                    return options[Math.floor(Math.random() * options.length)];
+                }
+                return p1;
+            });
+            return result.replace(/{|}/g, '');
+        }
+
+        function handleTemplate(option1, option2) {
+            return Math.random() > 0.5 ? option1 : option2;
+        }
+
+        function generateContentsBody(phoneNumber, longForm, shortForm, imageList, data, siteName) {
+            data = data.replace(/&amp;/g, 'and').replace(/\n/g, '<br>').replace(/<br><br><br>/g, '<br>').trim();
+            data = cleanText(data);
+            let allReformattedBody = '';
+            let usedImage = [];
+            let sanitizedPhone = phoneNumber.replace(/\s|\(|\)|-/g, '');
+            let phoneNumberUrl = `tel:${sanitizedPhone}`;
+            let allData = data.split('$$');
+
+            let myNini = 0;
+            allData.forEach(selectedContents => {
+                selectedContents = selectedContents.trim().replace(/\n/g, '');
+                let singleTemplateChecker = '';
+                let replace_long_form= `<div class="col-m-6 col-l-6">
+                                    aloomalongform
+                                </div>`;
+                let replace_short_form= `<div class="col-m-4 col-l-4">
+                                        aloomashortform
+                                    </div>`;
+                
+                if (selectedContents.includes('%%')) {
+                    let multipleChecker = selectedContents.split('%%').length;
+                    
+                    if (selectedContents.includes('<review>')) {
+                        singleTemplateChecker = '<template9>';
+                    }else if (selectedContents.includes('<faq>')) {
+                        singleTemplateChecker = '<template10>';
+                    } else if (multipleChecker === 2) {
+                        singleTemplateChecker = '<template7>';
+                    } else if (multipleChecker === 3) {
+                        singleTemplateChecker = '<template5>';
+                    }
+                } else {
+                    if (selectedContents.includes('<contact>')) {
+                        singleTemplateChecker = '<template8>';
+                    }  else {
+                        if (myNini === 0) {
+                            singleTemplateChecker = handleTemplate('<template1>', '<template4>');
+                        } else if (myNini === 2) {
+                            singleTemplateChecker = handleTemplate('<template2>', '<template3>');
+                        } else {
+                            singleTemplateChecker = '<template6>';
+                        }
+                        myNini++;
+                    }
+                }
+                
+                if (singleTemplateChecker === '<template1>' ||
+                    singleTemplateChecker === '<template2>' ||
+                    singleTemplateChecker === '<template3>' ||
+                    singleTemplateChecker === '<template4>'
+                ) {
+                    let [header, mainParagraph, secondPart] = getContents(selectedContents, '<h2>');
+                    if (singleTemplateChecker === '<template1>'){
+                        let templateData1 = `<!-- Template 1.1 Start -->
+                        <br><br>
+                        <div class="containeralooma">
+                            <section class="boxalooma">
+                            <div class="row">
+                                <div class="col-m-6 col-l-6">
+                                    <h2 class="template1 h2alooma">aloomaidheader</h2>
+                                    <p class="template1 palooma">aloomaidparagraph</p>
+                                    aloomalistdata
+                                    <div class="callalooma"><a href="aloomaidphonenumberurl">Click Here To Call Us aloomaidphonenumberful</a></div>
+                                </div>
+                                <div class="col-m-6 col-l-6">
+                                    aloomalongform
+                                </div>
+
+                            </div>
+                            </section>
+                        </div>
+
+                        <!-- Template 1.1 End -->`;
+                        templateData = templateData1;
+                    }
+                    else if (singleTemplateChecker === '<template2>') {
+                        let templateData2 = `<!-- Template 2 Start -->
+                        <br><br><br><br>
+                        <div class="containeralooma" id="ourservices">
+                            <section class="boxalooma">
+                            <div class="row">
+                                <h2 class="template2 mx-auto">aloomaidheader </h2>
+                                <p class="template2 palooma mx-auto">aloomaidparagraph
+                                </p>
+                                <div class="col-m-8 col-l-8">
+                                    aloomalistdata
+                                    <div class="callalooma"><a href="aloomaidphonenumberurl">Click Here To Call Us aloomaidphonenumberful</a></div>
+                                </div>
+                                <div class="col-m-4 col-l-4">
+                                        aloomashortform
+                                    </div>
+                                
+                            </div>
+                            </section>  
+                        </div>
+
+                        <!-- Template 2 End -->`;
+                        templateData = templateData2;
+                    }
+                    else if (singleTemplateChecker === '<template3>') {
+                        let templateData3 = `<!-- Template 3 Start -->
+                        <br><br><br><br>
+                        <div class="containeralooma">
+                            <section class="boxalooma">
+                                <div class="row">
+                                    <div class="col-m-4 col-l-4">
+                                        aloomashortform
+                                    </div>
+                                    <div class="col-m-8 col-l-8">
+                                        <h2 class="h2alooma template3">aloomaidheader</h2>
+                                        <p class="template3 palooma">aloomaidparagraph
+                                        </p>
+                                aloomalistdata
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                
+                                        <div class="callalooma"><a href="aloomaidphonenumberurl">Click Here To Call Us aloomaidphonenumberful</a></div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+
+
+                        <!-- Template 3 End -->`;
+                        templateData = templateData3;
+                    }
+                    else if (singleTemplateChecker === '<template4>') {
+                        let templateData4 = `<!-- Template 4 Start -->
+                        <br><br><br><br>
+                        <div class="containeralooma">
+                            <section class="boxalooma">
+                                <div class="row">
+                                    <div class="col-m-6 col-l-6">
+                                        <h2 class="template4 h2alooma">aloomaidheader</h2>
+                                        <p class="template4 palooma">aloomaidparagraph
+                                        </p>
+                                        aloomalistdata
+                                        <div class="callalooma mx-auto"><a href="aloomaidphonenumberurl">Click Here To Call Us aloomaidphonenumberful</a></div>
+                                        
+                                    </div>
+                                    <div class="col-m-6 col-l-6">
+                                    aloomalongform
+                                </div>
+                                </div>
+                        
+                                
+                            </section>
+                        </div>
+
+                        <!-- Template 4 End -->`;
+                        templateData = templateData4;
+                    }
+                    if (longForm.length > 3) {
+                        templateData = templateData.replace(/aloomaidheader/g, header)
+                            .replace(/aloomaidparagraph/g, mainParagraph)
+                            .replace(/aloomalistdata/g, secondPart)
+                            .replace(/aloomalongform/g, longForm)
+                            .replace(/aloomashortform/g, shortForm)
+                            .replace(/aloomaidphonenumberful/g, phoneNumber)
+                            .replace(/aloomaidphonenumberurl/g, phoneNumberUrl);
+                    } else {
+                        templateData = templateData.replace(/aloomaidheader/g, header)
+                            .replace(/aloomaidparagraph/g, mainParagraph)
+                            .replace(/aloomalistdata/g, secondPart)
+                            .replace(replace_long_form, '')
+                            .replace(replace_short_form, '')
+                            .replace(/col-m-6 col-l-6/g, '')
+                            .replace(/aloomaidphonenumberful/g, phoneNumber)
+                            .replace(/aloomaidphonenumberurl/g, phoneNumberUrl);
+                    }
+                    allReformattedBody += templateData;
+                }
+                else if (singleTemplateChecker === '<template5>') {
+                    
+                    let templateData = `<!-- Template 5 Start -->
+                        <br><br><br><br>
+                        <div class="containeralooma" id="About">
+                            <section class="boxalooma">
+                            <div class="row">
+                                <div class="col-m-4 col-l-4">
+                                    <h2 class="template4 h2alooma">aloomaidheader</h2>
+                                    <p class="template4 palooma">aloomaidparagraph
+                                    </p>
+                                    aloomalistdata
+                                    <div class="callalooma mx-auto"><a href="aloomaidphonenumberurl">Click Here To Call Us aloomaidphonenumberful</a></div>
+                                </div>
+                                <div class="col-m-4 col-l-4">
+                                    <h2 class="template4 h2alooma">aloomaidheader</h2>
+                                    <p class="template4 palooma">
+                                    aloomaidparagraph
+                                    </p>
+                                    aloomalistdata
+                                    <div class="callalooma mx-auto"><a href="aloomaidphonenumberurl">Click Here To Call Us aloomaidphonenumberful</a></div>
+                                </div>
+                                <div class="col-m-4 col-l-4">
+                                    <h2 class="template4 h2alooma">aloomaidheader</h2>
+                                    <p class="template4 palooma">aloomaidparagraph
+                                    </p>
+                                    aloomalistdata
+                                    <div class="callalooma mx-auto"><a href="aloomaidphonenumberurl">Click Here To Call Us aloomaidphonenumberful</a></div>
+                                </div>
+                            </div>
+                            </section>
+                        </div>
+
+                        <!-- Template 5 End -->`;
+                    let allDataSplit = selectedContents.split('%%');
+                    
+                    allDataSplit.forEach(dataSplit => {
+                        let [header, mainParagraph, secondPart] = getContents(dataSplit, '<h2>');
+                        templateData = templateData
+                            .replace(/aloomaidheader/, header)
+                            .replace(/aloomaidparagraph/, mainParagraph)
+                            .replace(/aloomalistdata/, secondPart)
+                            .replace(/aloomalongform/, longForm)
+                            .replace(/aloomashortform/, shortForm)
+                            .replace(/aloomaidphonenumberful/, phoneNumber)
+                            .replace(/aloomaidphonenumberurl/, phoneNumberUrl);
+                    });
+                    allReformattedBody += templateData;
+                }
+                else if (singleTemplateChecker === '<template6>') {
+                    let [header, mainParagraph, secondPart] = getContents(selectedContents, '<h2>');
+                    let templateData = `<!-- Template 6 Start -->
+                        <br><br><br><br>
+                        <div class="containeralooma">
+                            <section class="boxalooma">
+                                <div class="row">
+                                    <div class="col-m-8 col-l-8">
+                                        <h2 class="template4 h2alooma">aloomaidheader</h2>
+                                        <p class="template4 palooma">aloomaidparagraph</p>
+                                        aloomalistdata
+                                        <div class="callalooma mx-auto"><a href="aloomaidphonenumberurl">Click Here To Call Us aloomaidphonenumberful</a></div>
+                                    </div>
+                                    <div class="col-m-4 col-l-4">
+                                        <img style="width: 100%" class="aloomacssidimage" src="aloomaidpickimage" alt="aloomaidalttitle">
+                                        <br>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+
+                        <!-- Template 6 End -->`;
+                    let counter = 0;
+                    let pickImage;
+                    do {
+                        pickImage = imageList[Math.floor(Math.random() * imageList.length)];
+                        counter++;
+                    } while (usedImage.includes(pickImage) && counter < 20);
+                    usedImage.push(pickImage);
+                    let altText = pickImage.split('.')[0];
+                    
+                    templateData = templateData.replace('aloomaidheader', header)
+                        .replace('aloomaidparagraph', mainParagraph)
+                        .replace('aloomalistdata', secondPart)
+                        .replace('aloomalongform', longForm)
+                        .replace('aloomashortform', shortForm)
+                        .replace('aloomaidphonenumberful', phoneNumber)
+                        .replace('aloomaidphonenumberurl', phoneNumberUrl)
+                        .replace('aloomaidpickimage', pickImage)
+                        .replace('aloomaidalttitle', altText);
+                    allReformattedBody += templateData;
+                }
+                else if (singleTemplateChecker === '<template7>'){
+                    let counter = 0, pickImage, pickImage1;
+                    while (counter < 20) {
+                        counter++;
+                        pickImage = imageList[Math.floor(Math.random() * imageList.length)];
+                        if (!usedImage.includes(pickImage)) break;
+                    }
+
+                    usedImage.push(pickImage);
+
+                    let counter1 = 0;
+                    while (counter1 < 20) {
+                        counter1++;
+                        pickImage1 = imageList[Math.floor(Math.random() * imageList.length)];
+                        if (!usedImage.includes(pickImage1)) break;
+                    }
+
+                    let altText = pickImage.split('.')[0];
+                    let altText1 = pickImage1.split('.')[0];
+
+                    let templateData = `<!-- template 7 -- two subtopic with a list and image-->
+                        <br><br><br><br>
+                        <div class="containeralooma">
+                            <section class="boxalooma">
+                            <div class="row">
+                                <div class="col-m-6 col-l-6">
+                                    <h2 class="template4 h2alooma">aloomaidheader</h2>
+                                    <p class="template4 palooma">aloomaidparagraph
+                                    </p>
+                                    aloomalistdata
+                                    <div class="callalooma mx-auto"><a href="aloomaidphonenumberurl">Click Here To Call Us aloomaidphonenumberful</a></div>
+                                    <br><br>
+                                    <img class="aloomacssidimage" src="aloomaidpickimage" alt="aloomaidalttitle">
+                                </div>
+                                <div class="col-m-6 col-l-6">
+                                    <img class="aloomacssidimage" src="aloomaidpickimage" alt="aloomaidalttitle">
+                                    <br><br>
+                                    <h2 class="template4 h2alooma">aloomaidheader</h2>
+                                    <p class="template4 palooma">aloomaidparagraph</p>
+                                    aloomalistdata
+                                    <div class="callalooma mx-auto"><a href="aloomaidphonenumberurl">Click Here To Call Us aloomaidphonenumberful</a></div>
+                                </div>
+                            </div>
+                            </section>
+                        </div>`;
+
+                    let allDataSplit = selectedContents.split("%%");
+                    
+                    allDataSplit.forEach(data => {
+                        let [ header, mainParagraph, secondPart ] = getContents(data, "<h2>");
+                        
+                        templateData = templateData
+                            .replace("aloomaidheader", header)
+                            .replace("aloomaidparagraph", mainParagraph)
+                            .replace("aloomalistdata", secondPart)
+                            .replace("aloomalongform", longForm)
+                            .replace("aloomashortform", shortForm)
+                            .replace("aloomaidphonenumberful", phoneNumber)
+                            .replace("aloomaidphonenumberurl", phoneNumberUrl)
+                            .replace("aloomaidpickimage", pickImage)
+                            .replace("aloomaidpickimage", pickImage1)
+                            .replace("aloomaidalttitle", altText)
+                            .replace("aloomaidalttitle", altText1);
+                    });
+
+                    allReformattedBody += templateData;
+                    usedImage.push(pickImage1);
+                }
+                else if (singleTemplateChecker === "<template8>") {
+                    // Template 8: Contact template with 1 subtopic
+                    let [ header, mainParagraph, secondPart ] = getContents(selectedContents, "<h2>");
+                    let templateData = `<br><br><br><br>
+                        <div class="containeralooma" id="contact">
+                            <section class="boxalooma">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h2 class="template4 h2alooma">aloomaidheader</h2>
+                                    <p class="template4 palooma">aloomaidparagraph
+                                    </p>
+                                    <div class="callalooma mx-auto"><a href="aloomaidphonenumberurl">Click Here To Call Us aloomaidphonenumberful</a></div>
+                                </div>
+                            </div>
+                            </section>
+                        </div>
+                    `;
+
+                    templateData = templateData
+                        .replace("aloomaidheader", header)
+                        .replace("aloomaidparagraph", mainParagraph)
+                        .replace("aloomalistdata", secondPart)
+                        .replace("aloomalongform", longForm)
+                        .replace("aloomashortform", shortForm)
+                        .replace("aloomaidphonenumberful", phoneNumber)
+                        .replace("aloomaidphonenumberurl", phoneNumberUrl)
+                        .replace("<contact>", "");
+
+                    allReformattedBody += templateData;
+                } 
+                else if (singleTemplateChecker === "<template9>") {
+                    // Template 9: Reviews
+                    let allCommentsData = "";
+                    let allDataSplit = selectedContents.split("%%");
+                    let commentsTemplate= `<br><br><br><br>
+                    <div class="col-m-4">
+                        <i class='fa-solid fa-star' style="color: gold; font-size: 20px;"></i><i class='fa-solid fa-star' style="color: gold; font-size: 20px;"></i><i class='fa-solid fa-star' style="color: gold; font-size: 20px;"></i><i class='fa-solid fa-star' style="color: gold; font-size: 20px;"></i><i class='fa-solid fa-star' style="color: gold; font-size: 20px;"></i>
+                        <p class="template4 palooma">aloomaidcomments</p>
+                        <label for="" style="float: right;">aloomaidcommenname</label>
+                    </div>`;
+                    allDataSplit.forEach(data => {
+                        
+                        let [comments, customerName, secondPart ] = getContents(data, "<h2>");
+                        allCommentsData += commentsTemplate
+                            .replace("aloomaidcomments", comments)
+                            .replace("aloomaidcommenname", customerName);
+                    });
+
+                    let templateData = `<!-- Reviews  -->
+                    <br><br><br><br>
+                    <div class="containeralooma" id="review">
+                        <section class="boxalooma" style="text-align: center;">
+                        <h2 class="heading-with-line template4 h2alooma">Customer Reviews</h2>
+                        <div class="row">
+                            aloomaidallcomments
+                        </div>
+                        </section>
+                    </div>`;
+
+                    templateData = templateData
+                        .replace("aloomaidallcomments", allCommentsData)
+                        .replace("<review>", "");
+
+                    allReformattedBody += templateData;
+                }
+                else if (singleTemplateChecker === "<template10>") {
+                    // Template 9: Faq
+                    let allCommentsData = "";
+                    let allDataSplit = selectedContents.split("%%");
+                    let commentsTemplate= `<h4 class="template4 palooma">aloomaidcomments</h4>
+                    <p>aloomaidcommenname</p>
+                    `;
+                    allDataSplit.forEach(data => {
+                        
+                        let [comments, customerName, secondPart ] = getContents(data, "<h2>");
+                        allCommentsData += commentsTemplate
+                            .replace("aloomaidcomments", comments)
+                            .replace("aloomaidcommenname", customerName);
+                    });
+
+                    let templateData = `<br><br><br><br>
+                    <div class="containeralooma" id="contact">
+                        <section class="boxalooma">
+                        <div class="row">
+                            <div class="col-12">
+                                <h2 class="template4 h2alooma" style="margin-left: 400px;">Frequently Asked Questions in USA</h2>
+                                aloomaidallcomments
+                                
+                            </div>
+                        </div>
+                        </section>
+                    </div>`;
+
+                    templateData = templateData
+                        .replace("aloomaidallcomments", allCommentsData)
+                        .replace("<faq>", "");
+
+                    allReformattedBody += templateData;
+                }
+                
+            });
+            
+
+            document.getElementById("output").innerHTML = allReformattedBody;
+        }
+
+        // Example usage
+        document.addEventListener("DOMContentLoaded", function() {
+            let sampleData = `PrimeCoat Painting in USA<h2>
+
+PrimeCoat Painting is a leading painting company serving the USA area, dedicated to delivering exceptional quality and customer satisfaction. With a diverse range of services tailored to meet the unique needs of residential, commercial, and industrial clients, we have established ourselves as a trusted name in the painting industry.
+
+
+
+Our commitment to quality is unwavering, as we employ a team of highly skilled and experienced professionals who take pride in their craftsmanship. From interior and exterior painting to decorative finishes and cabinet refinishing, we utilize premium materials and techniques to ensure long-lasting, beautiful results. At PrimeCoat Painting, we prioritize a customer-centric approach, working closely with our clients to understand their vision and exceed their expectations.
+
+$$
+
+Residential Painting Services<h2>
+
+At PrimeCoat Painting, we offer comprehensive interior and exterior painting services for all types of residential properties in USA, including single-family homes, townhouses, condominiums, and apartments. Our team of skilled painters has extensive experience in transforming living spaces with a fresh coat of paint.
+
+
+
+For interior projects, we handle everything from painting individual rooms to complete home makeovers. We specialize in living rooms, bedrooms, kitchens, bathrooms, and even intricate trim work and cabinetry. Our meticulous preparation process ensures a smooth, long-lasting finish, and we use high-quality paints from trusted brands to ensure exceptional results.
+
+
+
+Exterior painting is crucial for protecting your home from the harsh USA climate and enhancing its curb appeal. We offer professional exterior painting services for siding, stucco, wood, and other surfaces. Our team will thoroughly prepare the surfaces, address any necessary repairs, and apply a durable, weather-resistant coating that will keep your home looking its best for years to come.
+
+
+
+Common residential painting projects we undertake include accent wall painting, full interior repainting, exterior repainting, deck staining and sealing, and more. Whether you're looking to refresh a single room or transform the entire look of your home, our experienced painters have the skills and expertise to deliver outstanding results.
+
+%%
+
+Commercial Painting Services<h2>
+
+At PrimeCoat Painting, we offer tailored commercial painting solutions for businesses and commercial properties in USA. Our experienced team is equipped to handle projects of all sizes, from small offices to large-scale facilities. We serve a wide range of commercial spaces, including office buildings, retail stores, restaurants, healthcare facilities, educational institutions, and more.
+
+
+
+Our commercial painting services utilize specialized techniques and coatings designed to meet the unique demands of commercial environments. We employ durable and long-lasting paints that can withstand high traffic and wear, ensuring a fresh and professional appearance for years to come. Our team is well-versed in meeting industry standards and regulations, ensuring compliance and safety throughout the painting process.
+
+
+
+Whether you require interior or exterior painting, we have the expertise to transform your commercial space with precision and efficiency. Our attention to detail and commitment to quality ensure that your business premises make a lasting impression on clients and visitors alike. 
+
+$$
+
+Industrial Painting Services<h2>
+
+PrimeCoat Painting offers specialized industrial painting services tailored for various facilities, including manufacturing plants, warehouses, power plants, and other industrial environments. Our team of experienced professionals is well-versed in the unique requirements and safety protocols of industrial painting projects.
+
+
+
+We utilize cutting-edge technologies and techniques to provide unparalleled coatings and painting services. Our industrial painting solutions are designed to enhance durability, resist corrosion, and ensure safety, leveraging decades of expertise in the field.
+
+
+
+Whether it's interior or exterior surfaces, we employ specialized coatings and application methods to withstand harsh conditions, heavy foot traffic, and exposure to chemicals or extreme temperatures. Our services comply with all relevant safety regulations and industry standards, ensuring a safe and compliant work environment for your industrial facility.
+
+%%
+
+Decorative Painting Services<h2>
+
+PrimeCoat Painting offers a wide range of decorative painting services to transform your space with unique and artistic finishes. Our team of talented artists specializes in faux finishes, murals, and custom designs, utilizing creative techniques and high-quality materials.
+
+
+
+For faux finishes, we can mimic the appearance of various textures and materials, such as marble, wood, or stone, creating a luxurious and sophisticated look. Our artists use specialized tools and techniques, including rag rolling, sponging, and glazing, to achieve realistic and visually stunning effects. We offer professional faux painting services to the USA. We can match any color you desire.
+
+
+
+Additionally, we offer custom mural painting services, allowing you to bring your vision to life on your walls. Whether you desire a whimsical scene, a nature-inspired landscape, or a modern abstract design, our artists will work closely with you to create a one-of-a-kind masterpiece.
+
+
+
+For those seeking unique textures and finishes, we also provide ragged finishes, create beautiful textures on walls & other surfaces with decorative painting services from the Painting Chicks in USA. These techniques add depth and character to your walls, creating a warm and inviting ambiance.
+
+$$
+
+Cabinet Refinishing Services<h2>
+
+At PrimeCoat Painting, we offer professional cabinet refinishing services to transform the look of your kitchen and bathroom cabinets. Instead of replacing your existing cabinets, our skilled team can refinish them, saving you time and money while achieving a stunning new appearance.
+
+
+
+The cabinet refinishing process begins with thorough preparation, including cleaning, sanding, and repairing any damages. We then apply high-quality stains, paints, or glazes to achieve the desired color and finish. Our team uses premium materials from trusted brands to ensure long-lasting results.
+
+
+
+Refinishing your cabinets offers several benefits over complete replacement. Not only is it a more cost-effective option, but it also helps reduce waste and environmental impact. Additionally, the process is typically faster than a full cabinet replacement, minimizing disruption to your daily routine.
+
+
+
+Whether you want to update the color scheme of your kitchen or revitalize worn-out bathroom cabinets, our cabinet refinishing services can breathe new life into your space. Trust PrimeCoat Painting to deliver exceptional craftsmanship and transform your cabinets into a beautiful focal point.
+
+%%
+
+Parking Lot Striping and Pavement Marking<h2>
+
+PrimeCoat Painting offers precision parking lot striping and pavement marking for businesses, schools, hospitals, shopping centers, and more. We don’t just lay down lines—we ensure ADA compliance, optimal traffic flow, and long-lasting paint solutions that withstand heavy vehicle wear and harsh weather conditions. Whether you're looking to redesign an existing layout or stripe a brand-new lot, our team uses professional-grade striping equipment and reflective paints for maximum visibility and safety.
+
+
+
+What sets us apart:<list>
+
+
+
+Use of eco-friendly, quick-dry paints for minimal downtime^^
+
+
+
+High-visibility reflective markings for night-time safety^^
+
+
+
+Custom symbols and branding integration available
+
+%%
+
+Roof Painting & Coating Services<h2>
+
+We specialize in professional roof painting and protective coatings for both sloped and flat rooftops. This service is perfect for prolonging roof lifespan, enhancing energy efficiency (through reflective cool roof coatings), and improving the overall aesthetic of your building. Whether it's a metal, asphalt, or tile roof, our specialized coatings resist mildew, reduce heat absorption, and add years of durability.
+
+
+
+What sets us apart:<list>
+
+
+
+Application of energy-saving “cool roof” coatings^^
+
+
+
+Expert surface prep and rust control for metal roofs^^
+
+
+
+Color matching and custom tinting available
+
+$$
+
+Specialized Expertise<h2>
+
+We’re not just painters — we’re surface experts. From concrete to metal, roofs to floors, our team understands how to properly prep, treat, and coat every type of surface for maximum durability and aesthetic impact.
+
+%%
+
+Eco-Friendly & Low-VOC Products<h2>
+
+We prioritize health and sustainability by using premium low-VOC (volatile organic compound) paints and environmentally responsible materials—perfect for sensitive environments such as schools and healthcare facilities.
+
+$$
+
+Licensed, Insured, and Safety-Certified Crew<h2>
+
+Our team is fully licensed, OSHA-certified, and background-checked. Safety is not optional—it’s embedded in every step of our process, and our insurance coverage gives our clients total peace of mind.
+
+%%
+
+Custom Solutions for Every Job<h2>
+
+No two jobs are alike, and we don’t treat them as such. We work closely with clients to develop customized painting plans that suit their vision, budget, and timeline—delivering personalized excellence every time.
+
+$$
+
+<review>
+
+We had PrimeCoat repaint all our exterior structures and stripe our parking lots. The attention to detail, especially with ADA markings and directional arrows, was unmatched. Their team worked nights to avoid disrupting classes!<h2> Vivian G.
+
+%%
+
+I didn’t even realize roof painting was a thing until PrimeCoat explained the benefits. After coating our roof, our summer cooling bills dropped significantly. Highly recommended!<h2> Robert P.
+
+%%
+
+The professionalism from start to finish was just refreshing. They provided samples, consulted with our board, and delivered a flawless finish across 5 buildings. We’ll definitely be calling again.<h2> Andrea S.
+
+%%
+
+PrimeCoat repainted our loading docks and warehouse floor markings. They even customized the floor zones with color-coded safety zones. Fantastic job and great communication!<h2> Vicky R.
+
+%%
+
+Working with PrimeCoat was a dream. As an architect, I have high expectations, and they exceeded every one. Their prep work alone impressed me. The finishes? Beautiful and durable.<h2> Mark D.
+
+%%
+
+"PrimeCoat handled the entire repainting of our townhome community. Even better, they included roof coating services that most painters don’t even offer. 10/10. Highly recommend!<h2> Kevin L.
+
+%%
+
+They repainted our gym’s exterior and added anti-slip coating to the entrance stairs. They also used low-odor paint inside—really appreciated that!<h2> Josh F.
+
+%%
+
+We rely on PrimeCoat for several of our commercial properties. Their flexibility, especially working off-hours and weekends, makes them a valuable partner in our buildouts.<h2> Ava S.
+
+$$
+
+<contact>Contact Us<h2>
+
+Have a project in mind or need a free quote? We’re here to help! We offer unmatched painting services in all of USA and we ensure premium customers’ satisfaction. You get nothing short of quality when you work with us. Call us today!
+
+`;
+            let dataList = sampleData.includes('@@@') 
+                ? sampleData.split('@@@').map(item => item.trim()) 
+                : [sampleData.trim()];
+
+            // Pick one at random
+            let selectedData = dataList[Math.floor(Math.random() * dataList.length)];
+            generateContentsBody(`(204) 506-9078`, ` `, ` `, ['static/images/istockphoto-468347609-612x612.jpg', 'static/images/istockphoto-663800636-612x612.jpg', 'static/images/istockphoto-810536766-612x612.jpg', 'static/images/istockphoto-823603668-612x612.jpg', 'static/images/istockphoto-1163460548-612x612.jpg', 'static/images/istockphoto-1176175449-612x612.jpg', 'static/images/istockphoto-1180626059-612x612.jpg', 'static/images/istockphoto-1211289550-612x612.jpg', 'static/images/istockphoto-1215328818-612x612.jpg', 'static/images/istockphoto-1323016304-612x612.jpg', 'static/images/istockphoto-1357877673-612x612.jpg', 'static/images/istockphoto-1359817229-612x612.jpg', 'static/images/istockphoto-1359817798-612x612.jpg', 'static/images/istockphoto-1369580172-612x612.jpg', 'static/images/istockphoto-1406077915-612x612.jpg', 'static/images/istockphoto-1468340492-612x612.jpg', 'static/images/istockphoto-1509366427-612x612.jpg', 'static/images/istockphoto-1525912370-612x612.jpg', 'static/images/istockphoto-1528429902-612x612.jpg', 'static/images/istockphoto-1528430412-612x612.jpg', 'static/images/istockphoto-2206523537-612x612.jpg', ''], selectedData, `exquisiteblooms.shop`);
+        });
+
+    </script>
+    <br><br><br><br>
+    <div class="containeralooma" style="background-color: transparent; width: 100%;">
+        <section class="boxalooma" style="text-align: center;">
+        <h2 class="heading-with-line template4 h2alooma">States In USA</h2>
+        <div class="row">
+            
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-ny/" id="aloomafotter">New York</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-ca/" id="aloomafotter">California</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-il/" id="aloomafotter">Illinois</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-fl/" id="aloomafotter">Florida</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-tx/" id="aloomafotter">Texas</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-pa/" id="aloomafotter">Pennsylvania</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-ga/" id="aloomafotter">Georgia</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-dc/" id="aloomafotter">District Of Columbia</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-ma/" id="aloomafotter">Massachusetts</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-az/" id="aloomafotter">Arizona</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-mi/" id="aloomafotter">Michigan</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-wa/" id="aloomafotter">Washington</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-mn/" id="aloomafotter">Minnesota</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-co/" id="aloomafotter">Colorado</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-md/" id="aloomafotter">Maryland</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-nv/" id="aloomafotter">Nevada</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-mo/" id="aloomafotter">Missouri</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-or/" id="aloomafotter">Oregon</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-oh/" id="aloomafotter">Ohio</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-in/" id="aloomafotter">Indiana</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-nc/" id="aloomafotter">North Carolina</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-va/" id="aloomafotter">Virginia</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-wi/" id="aloomafotter">Wisconsin</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-ri/" id="aloomafotter">Rhode Island</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-ut/" id="aloomafotter">Utah</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-tn/" id="aloomafotter">Tennessee</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-ky/" id="aloomafotter">Kentucky</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-ok/" id="aloomafotter">Oklahoma</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-ct/" id="aloomafotter">Connecticut</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-la/" id="aloomafotter">Louisiana</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-hi/" id="aloomafotter">Hawaii</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-ne/" id="aloomafotter">Nebraska</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-nm/" id="aloomafotter">New Mexico</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-al/" id="aloomafotter">Alabama</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-sc/" id="aloomafotter">South Carolina</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-ia/" id="aloomafotter">Iowa</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-ks/" id="aloomafotter">Kansas</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-ar/" id="aloomafotter">Arkansas</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-id/" id="aloomafotter">Idaho</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-ms/" id="aloomafotter">Mississippi</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-nj/" id="aloomafotter">New Jersey</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-ak/" id="aloomafotter">Alaska</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-nh/" id="aloomafotter">New Hampshire</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-me/" id="aloomafotter">Maine</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-nd/" id="aloomafotter">North Dakota</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-wv/" id="aloomafotter">West Virginia</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-sd/" id="aloomafotter">South Dakota</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-de/" id="aloomafotter">Delaware</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-mt/" id="aloomafotter">Montana</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-vt/" id="aloomafotter">Vermont</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-wy/" id="aloomafotter">Wyoming</a></div>
+        </div>
+
+        </div>
+        </section>
+    </div>
+
+    <br><br><br><br>
+    <div class="containeralooma" style="background-color: transparent; width: 100%;">
+        <section class="boxalooma" style="text-align: center;">
+        <h2 class="heading-with-line template4 h2alooma">Most popular cities we serve</h2>
+        <div class="row">
+            
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-ivanhoe-ca/" id="aloomafotter">Ivanhoe</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-warsaw-nc/" id="aloomafotter">Warsaw</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-brownstown-pa/" id="aloomafotter">Brownstown</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-canton-pa/" id="aloomafotter">Canton</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-essex-village-ct/" id="aloomafotter">Essex Village</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-casselberry-fl/" id="aloomafotter">Casselberry</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-sacaton-az/" id="aloomafotter">Sacaton</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-gainesville-ga/" id="aloomafotter">Gainesville</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-tumwater-wa/" id="aloomafotter">Tumwater</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-sandusky-mi/" id="aloomafotter">Sandusky</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-brainerd-mn/" id="aloomafotter">Brainerd</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-camp-hill-pa/" id="aloomafotter">Camp Hill</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-henderson-tn/" id="aloomafotter">Henderson</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-russell-ga/" id="aloomafotter">Russell</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-midway-fl/" id="aloomafotter">Midway</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-somerville-tx/" id="aloomafotter">Somerville</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-deltana-ak/" id="aloomafotter">Deltana</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-schulenburg-tx/" id="aloomafotter">Schulenburg</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-cloverdale-va/" id="aloomafotter">Cloverdale</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-marionville-mo/" id="aloomafotter">Marionville</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-elgin-sc/" id="aloomafotter">Elgin</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-susanville-ca/" id="aloomafotter">Susanville</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-beach-nd/" id="aloomafotter">Beach</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-black-mountain-nc/" id="aloomafotter">Black Mountain</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-miami-gardens-fl/" id="aloomafotter">Miami Gardens</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-happy-valley-ca/" id="aloomafotter">Happy Valley</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-odell-or/" id="aloomafotter">Odell</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-jasper-al/" id="aloomafotter">Jasper</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-spring-lake-nj/" id="aloomafotter">Spring Lake</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-woodland-park-ne/" id="aloomafotter">Woodland Park</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-devine-tx/" id="aloomafotter">Devine</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-fort-mckinley-oh/" id="aloomafotter">Fort Mckinley</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-makawao-hi/" id="aloomafotter">Makawao</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-gilman-il/" id="aloomafotter">Gilman</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-sarasota-springs-fl/" id="aloomafotter">Sarasota Springs</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-sanger-ca/" id="aloomafotter">Sanger</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-lindale-ga/" id="aloomafotter">Lindale</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-westland-mi/" id="aloomafotter">Westland</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-fulton-mo/" id="aloomafotter">Fulton</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-redding-ca/" id="aloomafotter">Redding</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-clear-lake-ia/" id="aloomafotter">Clear Lake</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-memphis-mi/" id="aloomafotter">Memphis</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-massapequa-park-ny/" id="aloomafotter">Massapequa Park</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-ogden-ut/" id="aloomafotter">Ogden</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-oak-grove-va/" id="aloomafotter">Oak Grove</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-new-athens-il/" id="aloomafotter">New Athens</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-skyline-acres-oh/" id="aloomafotter">Skyline Acres</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-walton-park-ny/" id="aloomafotter">Walton Park</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-west-valley-city-ut/" id="aloomafotter">West Valley City</a></div>
+        </div>
+
+        <div class="col-m-2" id="aloomafotter1">
+            <div id="aloomafotter2"><a href="/drywall-contractor-little-walnut-village-nm/" id="aloomafotter">Little Walnut Village</a></div>
+        </div>
+
+        </div>
+        </section>
+    </div>
+        
+
+        <!-- Footer Start -->
+        <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-m-6 col-l-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="text-white mb-4">Our Service</h4>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Home</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Services</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> About Us</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Reviews</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>   
+        <div class="scroll-arrow" id="scrollArrow">&#8675;</div> <!-- Upward pointing arrow -->
+            <div class="callalooma mx-auto scroll-button" id="scrollButton" style="font-family: calibri;"><a href="tel:2045069078">Click Here To Call Us (204) 506-9078 </a></div>
+            
+            <script>
+                window.addEventListener('scroll', function() {
+                    var button = document.getElementById('scrollButton');
+                    var arrow = document.getElementById('scrollArrow');
+                    if (window.scrollY > 500) {
+                        button.style.display = 'block';
+                        arrow.style.display = 'block';
+                    } else {
+                        button.style.display = 'none';
+                        arrow.style.display = 'none';
+                    }
+                });
+                // const data = {
+                //    "Maimi": "#mpcstate",
+                //    "Florida": "#mpccites",
+                //    "Arizona": "#mpccounty",
+                //    "Alaska": "#mpcstate",
+                //    "Utah": "#mpccites",
+                //    "Ohio": "#mpccounty",
+                //    "Arkansas": "#mpcstate",
+                //    "Cit": "#mpccites",
+                //    "Coun": "#mpccounty"
+                // };
+
+                // const searchBar = document.getElementById('searchBar');
+                // const resultsContainer = document.getElementById('results');
+
+                // searchBar.addEventListener('input', function() {
+                //    const query = searchBar.value.toLowerCase();
+                //    resultsContainer.innerHTML = '';
+
+                //    if (query) {
+                //          resultsContainer.style.display = 'flex'; // Show results container
+                //          for (const [key, value] of Object.entries(data)) {
+                //             if (key.toLowerCase().includes(query)) {
+                //                const resultItem = document.createElement('div');
+                //                resultItem.className = 'result-item';
+                //                resultItem.innerHTML = `<a href="${value}">${key}</a>`;
+                //                resultsContainer.appendChild(resultItem);
+                //             }
+                //          }
+                //    } else {
+                //          resultsContainer.style.display = 'none'; // Hide results container
+                //    }
+                // });
+            </script>
+
+        
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="static/lib/wow/wow.min.js"></script>
+    <script src="static/lib/easing/easing.min.js"></script>
+    <script src="static/lib/waypoints/waypoints.min.js"></script>
+    <script src="static/lib/counterup/counterup.min.js"></script>
+    <script src="static/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="static/lib/lightbox/js/lightbox.min.js"></script>
+    
+
+    <!-- Template Javascript -->
+    <script src="static/js/main.js"></script>
+    <script src="https://kit.fontawesome.com/c4c9a6665b.js" crossorigin="anonymous"></script></body>
+
+</html>
